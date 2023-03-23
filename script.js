@@ -17,3 +17,9 @@ const menuToggle = document.getElementById('navbarSupportedContent')
 navLinks.forEach((l) => {
     l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
 })
+
+
+
+const navMenu = document.querySelector( "#navMenu");
+navMenu.addEventListener("click", () => { navMenu.classList.toggle("active");
+});
